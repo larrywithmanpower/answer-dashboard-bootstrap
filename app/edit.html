@@ -1,8 +1,8 @@
 ---
-title: 首頁
+title: 編輯
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: edit
 ---
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white mb-7 navbar--style">
@@ -105,9 +105,9 @@ current: index
       </div>
     </section>
 
-    <section class="assignmentCard mb-3">
+    <section class="assignmentCard">
       <p class="text-end fs-12 text-secondary mb-2">2 comments</p>
-      <div class="card">
+      <div class="card rounded-0 rounded-top">
         <div class="card-header d-flex justify-content-between align-items-center">
           <h5 class="mb-0">
             <small class="fs-12 mb-1">Chapter Assignment 2 / HTML&CSS</small><br>
@@ -120,7 +120,7 @@ current: index
           </a>
         </div>
         <div class="card-body">
-          <div class="d-flex justify-content-between mb-3">
+          <div class="d-flex justify-content-between">
             <div class="w-25 me-2">
               <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
                 alt="Emily Wang" class="avatar">
@@ -140,75 +140,88 @@ current: index
                   <i class="material-icons h4">
                     attachment
                   </i>
-
                 </div>
                 <span class="fw-bold">HW-2-David.zip</span>
               </a>
             </div>
           </div>
-          <!-- second area -->
-          <div class="d-flex justify-content-between">
-            <div class="w-25 me-2">
-              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
-                alt="Andy Chen (You)" class="avatar">
-            </div>
-            <div>
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h5 class="card-title h6 fw-bold mb-1">Andy Chen (You)</h5>
-                  <span class="fs-12 text-secondary">13:24 AM (1 hours ago)</span>
-                </div>
-                <ul class="d-flex list-unstyled align-items-center">
-                  <li>
-                    <a href="#" class="link-dark">
-                      <i class="material-icons">
-                        star_outline
-                      </i>
-                    </a>
-                  </li>
-                  <li class="ms-4">
-                    <a href="edit.html" class="link-dark">
-                      <i class="material-icons">
-                        create
-                      </i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <p class="card-text lh-21 mt-3">
-                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b,
-                c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and
-                q.
-              </p>
-              <h6 class="py-3">You can:</h6>
-              <ul class="mb-0">
-                <li>
-                  adjust the <code class="text-success bg-light px-1">vertical-align</code> of the image to position it
-                  elsewhere (e.g. the <code class="text-success bg-light px-1">middle</code> ) or
-                </li>
-                <li>
-                  change the <code class="text-success bg-light px-1">display</code> so it isn’t inline.
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
-      <!-- footer area -->
-      <div class="d-flex justify-content-between align-items-center pt-4">
-        <div class="d-flex">
-          <i class="material-icons me-4">
-            chevron_left
-          </i>
-          <i class="material-icons">
-            chevron_right
-          </i>
+      <!-- secondcard -->
+      <div class="card rounded-0 rounded-bomttom">
+        <div class="card-header">
+          <ul class="d-flex align-items-center list-unstyled py-2 mb-0">
+            <li class="me-4">
+              <a href="javascript:void(0)" class="link-dark d-flex align-items-center fw-bold">
+                <span class="me-2">Body Text</span>
+                <i class="material-icons">
+                  arrow_drop_down
+                </i>
+              </a>
+            </li>
+            <li class="me-5">
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  format_bold
+                </i>
+              </a>
+            </li>
+            <li class="me-5">
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  format_italic
+                </i>
+              </a>
+            </li>
+            <li class="me-5">
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  format_list_bulleted
+                </i>
+              </a>
+            </li>
+            <li class="me-5">
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  format_list_numbered
+                </i>
+              </a>
+            </li>
+            <li class="me-5">
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  photo
+                </i>
+              </a>
+            </li>
+            </li>
+            <li class="me-5">
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  link
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:boid(0)" class="link-dark d-flex align-items-center">
+                <i class="material-icons">
+                  code
+                </i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="d-flex">
-          <button class="btn btn-outline-success fw-bold px-6">Mark as read</button>
-          <button class="btn btn-success fw-bold ms-3 px-6">Reply</button>
+        <div class="card-body">
+          <form action="">
+            <textarea name="" id="" rows="10" placeholder="Reply an answer…" class="editText border-0 w-100"></textarea>
+          </form>
+        </div>
+        <div class="card-footer border-top-0 bg-white text-end">
+          <button class="btn btn-outline-success px-6">Cancel</button>
+          <button class="btn btn-success px-6">Reply</button>
         </div>
       </div>
+
     </section>
 
 

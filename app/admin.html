@@ -1,0 +1,43 @@
+---
+title: 表單頁面
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white mb-7 navbar--style">
+  <div class="container-fluid">
+    <a class="navbar-brand navbar__logo" href="#">Admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav me-auto">
+        <a class="nav-link d-flex align-items-center fw-bolder pb-0" href="#">
+          <i class="material-icons text-success ms-2">
+            add
+          </i>
+          Add New Admin
+        </a>
+      </div>
+      <ul class="d-flex ms-auto list-unstyled justify-content-end align-items-center mb-0 pt-2">
+        <li>
+          <a href="#" class="link-dark">
+            <i class="material-icons me-4">
+              search
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link-dark">
+            <i class="material-icons">
+              notifications_active
+            </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

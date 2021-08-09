@@ -1,0 +1,8 @@
+.editText {
+  &::-webkit-input-placeholder {
+    color: $secondary;
+  }
+  &:focus-visible {
+    outline: 0;
+  }
+}

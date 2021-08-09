@@ -7,6 +7,10 @@
   line-height: 24px;
 }
 
+.lh-21 {
+  line-height: 21px;
+}
+
 
 // extra spacing
 
@@ -14,7 +18,9 @@
 
 
 // extra font size
-
+.fs-12 {
+  font-size: .75rem;
+}
 
 
 // img
@@ -22,4 +28,32 @@
   width: 40px;
   height: 40px;
   object-fit: cover;
+  border-radius: 50%;
+}
+
+
+// icon
+.iconRotated {
+  transform: rotate(270deg);
+}
+
+// navbar
+.navbar--style {
+  padding-top: 25px;
+  .navbar__logo {
+    font-size: 24px;
+    color: $gray-900;
+    font-weight: 800;
+    line-height: 33px;
+  }
+  .navbar-light .navbar-nav {
+    .nav-link {
+      transition: all .3s ease;
+      color: $dark;
+      &:hover {
+        color: $success;
+      }
+    }
+
+  }
 }
