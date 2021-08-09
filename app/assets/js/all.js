@@ -18,9 +18,21 @@ if (loc === 'index.html') {
   $('.menu__item').find('.link').each(function () {
     if($(this).attr('href') === loc) {
       $(this).parent().addClass('active');
-      // ! 下面為了在未製作完成前加上，之後要取消
-      $('.menu').addClass('vh-100');
     }
   });
 }
+
+
+// modal
+let name;
+let email;
+
+$('.js-modal').click(function() {
+  name = $(this).data('name');
+  email = $(this).data('email');
+  console.log(name, email);
+  $('.js-accountName').attr('value', name);
+  $('.js-accountEmail').attr('value', email);
+})
+
 

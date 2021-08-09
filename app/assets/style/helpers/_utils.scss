@@ -11,9 +11,14 @@
   line-height: 21px;
 }
 
+.lh-33 {
+  line-height: 33px;
+}
 
 // extra spacing
-
+.mb-18 {
+  margin-bottom: 1.125rem;
+}
 
 
 
@@ -21,6 +26,8 @@
 .fs-12 {
   font-size: .75rem;
 }
+
+
 
 
 // img
@@ -46,14 +53,19 @@
     font-weight: 800;
     line-height: 33px;
   }
-  .navbar-light .navbar-nav {
-    .nav-link {
+  .navLink--hover {
       transition: all .3s ease;
       color: $dark;
+      padding-top: 5px;
       &:hover {
         color: $success;
       }
     }
-
-  }
 }
+
+// border radius
+.border-radius-2 {
+  border-radius: 2px;
+}
+
+// btn
