@@ -1,4 +1,3 @@
-
 // layout sideMenu 
 let loc = (window.location.pathname).substring(1);
 
