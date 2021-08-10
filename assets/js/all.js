@@ -1,8 +1,7 @@
 "use strict";
 
-$conf['block_interest_cohort'] = TRUE; // layout sideMenu 
-
-var loc = window.location.pathname.substring(1);
+// layout sideMenu 
+var loc = $(location).attr('pathname').substring(1); // console.log($(location).attr('pathname'));
 
 if (loc === 'index.html') {
   $('.menu__item').find('.link').each(function () {
