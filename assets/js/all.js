@@ -1,7 +1,7 @@
 "use strict";
 
 // layout sideMenu 
-var loc = window.location.pathname.substring(1);
+var loc = window.location.pathname;
 $('.menu__item').find('.link').each(function () {
   if ($(this).attr('href') === loc) {
     $(this).parent().toggleClass('active');
