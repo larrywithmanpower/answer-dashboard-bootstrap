@@ -42,3 +42,31 @@
 .form-check-input {
   border: 1px solid $dark;
 }
+
+// check modal
+
+.checkModal__img {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+}
+
+
+// rotate animation
+.js-rotate {
+  i {
+    transition: all .3s linear;
+  }
+  &.btn-check:focus + .btn, .btn:focus {
+    box-shadow: none;
+  }
+}
+
+.js-rotate.down {
+  i {
+    transform: rotate(180deg);
+  }
+}
+
+
+

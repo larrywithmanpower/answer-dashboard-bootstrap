@@ -1,5 +1,5 @@
 ---
-title: 表單頁面
+title: Admin
 layout: ./app/layout.ejs
 engine: ejs
 current: admin
@@ -15,7 +15,12 @@ current: admin
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="navbar-nav me-auto">
-        <a class="navLink--hover d-flex align-items-center fw-bolder" href="#">
+        <a
+          class="navLink--hover d-flex align-items-center fw-bolder"
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#addNewModal"
+        >
           <i class="material-icons text-success ms-2">
             add
           </i>
@@ -49,7 +54,7 @@ current: admin
         <th scope="col" width="10%">
           <div class="d-flex align-items-center">
             ID
-            <i class="material-icons text-success ms-2 fs-5">
+            <i class="material-icons text-success ms-2 fs-5 handPointer">
               arrow_downward
             </i>
           </div>
@@ -68,12 +73,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#1" data-name="Emir Wicks" data-email="emir.wicks@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Emir Wicks"
-            data-email="emir.wicks@mail.com">
+              data-name="Emir Wicks" data-email="emir.wicks@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -86,12 +91,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#2" data-name="Zaina Goldsmith" data-email="zaina.goldsmith@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Zaina Goldsmith"
-            data-email="zaina.goldsmith@mail.com">
+              data-name="Zaina Goldsmith" data-email="zaina.goldsmith@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -104,12 +109,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#3" data-name="Mahima Lopez" data-email="mahima.lopez@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Mahima Lopez"
-            data-email="mahima.lopez@mail.com">
+              data-name="Mahima Lopez" data-email="mahima.lopez@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -122,12 +127,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#4" data-name="Pharrell Murray" data-email="pharrell.murray@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Pharrell Murray"
-            data-email="pharrell.murray@mail.com">
+              data-name="Pharrell Murray" data-email="pharrell.murray@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -140,12 +145,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#5" data-name="Annika Mcbride" data-email="annika.mcbride@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Annika Mcbride"
-            data-email="annika.mcbride@mail.com">
+              data-name="Annika Mcbride" data-email="annika.mcbride@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -158,12 +163,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#6" data-name="Fatimah Clark" data-email="fatimah.clark@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Fatimah Clark"
-            data-email="fatimah.clark@mail.com">
+              data-name="Fatimah Clark" data-email="fatimah.clark@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -176,12 +181,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#7" data-name="Klaudia Rhodes" data-email="klaudia.rhodes@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Klaudia Rhodes"
-            data-email="klaudia.rhodes@mail.com">
+              data-name="Klaudia Rhodes" data-email="klaudia.rhodes@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -194,12 +199,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#8" data-name="Tillie Lucero" data-email="tillie.lucero@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Tillie Lucero"
-            data-email="tillie.lucero@mail.com">
+              data-name="Tillie Lucero" data-email="tillie.lucero@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -212,12 +217,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#9" data-name="Sabrina Stephenson" data-email="sabrina.stephenson@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Sabrina Stephenson"
-            data-email="sabrina.stephenson@mail.com">
+              data-name="Sabrina Stephenson" data-email="sabrina.stephenson@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -230,12 +235,12 @@ current: admin
         <td>Yes</td>
         <td>
           <div class="d-flex mt-2">
-            <a href="#" class="link-dark">
+            <a href="#" class="js-checkModal link-dark" data-bs-toggle="modal" data-bs-target="#checkModal"
+              data-item="#10" data-name="Annie Smith" data-email="annie.smith@mail.com">
               <i class="material-icons">remove_red_eye</i>
             </a>
             <a href="#" class="link-dark ms-auto js-modal" data-bs-toggle="modal" data-bs-target="#editModal"
-            data-name="Annie Smith"
-            data-email="annie.smith@mail.com">
+              data-name="Annie Smith" data-email="annie.smith@mail.com">
               <i class="material-icons">edit</i>
             </a>
           </div>
@@ -252,9 +257,15 @@ current: admin
             <span class="material-icons mt-1">chevron_left</span>
           </a>
         </li>
-        <li class="page-item page-link--num"><a class="page-link active" href="#">1</a></li>
-        <li class="page-item page-link--num"><a class="page-link" href="#">2</a></li>
-        <li class="page-item page-link--num"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link page-link--num active" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link page-link--num" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link page-link--num" href="#">3</a>
+        </li>
         <li class="page-item">
           <a class="page-link page-link--icon" href="#" aria-label="Next">
             <span class="material-icons mt-1">chevron_right</span>
@@ -263,102 +274,221 @@ current: admin
       </ul>
     </nav>
   </div>
+</div>
 
-  <!--! new admin modal -->
-
-  <!--! info checked modal  -->
-
-  <!--! edit modal -->
-  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header border-bottom-0">
-          <h4 class="modal-title fw-bold" id="editModalLabel">Edit Admin</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!--! new admin modal -->
+<div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title fw-bold" id="addNewModalLabel">New Admin</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="modal-title mb-3 fw-bold">
+          Account
+        </h5>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control border-dark p-3 border-radius-2" id="name">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control border-dark p-3 border-radius-2" id="email">
+          </div>
+        </form>
+        <hr class="dividedLine">
+        <h5 class="modal-title mb-3 fw-bold">
+          Verification
+        </h5>
+        <div class="d-flex align-items-center mb-18">
+          <i class="material-icons text-danger me-2">report_problem</i>
+          <span class="text-dark fw-bold lh-33">Unverified</span>
         </div>
-        <div class="modal-body">
-          <h5 class="modal-title mb-3 fw-bold">
-            Account
-          </h5>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="js-accountName form-control bg-light border-0 p-3 border-radius-2" id="name" value="Emir Wicks">
-            </div>
-            <div class="mb-4">
-              <label for="email" class="form-label">Email</label>
-              <input type="text" class="js-accountEmail form-control bg-light border-0 p-3 border-radius-2" id="email" value="emir.wicks@mail.com">
-            </div>
-          </form>
-          <hr class="dividedLine">
-          <h5 class="modal-title mb-3 fw-bold">
-            Verification
-          </h5>
-          <div class="d-flex align-items-center">
-            <span class="d-flex align-items-center">
-              <i class="material-icons text-success me-2">
-                check_circle
+        <button class="btn btn-outline-gray400 text-success fw-bold w-100 p-3 border-radius-2">Send Verification Mail</button>
+        <hr class="dividedLine">
+        <h5 class="modal-title mb-3 fw-bold">
+          Access Level
+        </h5>
+        <select class="form-select p-3 border-radius-2">
+          <option value="-Choose access level-"  selected disabled>-Choose access level-</option>
+          <option value="Admin">Admin</option>
+        </select>
+        <hr class="dividedLine">
+        <h5 class="modal-title mb-3 fw-bold">
+          Custom Access
+        </h5>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Lecture" id="Lecture">
+          <label class="form-check-label" for="Lecture">
+            Lecture
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Coupon" id="Coupon">
+          <label class="form-check-label" for="Coupon">
+            Coupon
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Message" id="Message">
+          <label class="form-check-label" for="Message">
+            Message
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Setting" id="Setting">
+          <label class="form-check-label" for="Setting">
+            Setting
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Task Menu" id="Task Menu">
+          <label class="form-check-label" for="Task Menu">
+            Task Menu
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 mt-8">
+        <button type="button" class="btn btn-outline-success px-6">Cancel</button>
+        <button type="button" class="btn btn-success px-6">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--! info checked modal  -->
+<div class="modal fade" id="checkModal" tabindex="-1" aria-labelledby="checkModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-body p-6">
+        <div class="d-flex">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true"
+            alt="checkModal" class="checkModal__img border-radius-2 me-4">
+          <div class="checkModal__info w-100">
+            <small class="d-flex justify-content-between mb-0">
+              <span class="js-checkModalItem"></span>
+              <button type="button" class="btn-close p-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </small>
+            <h4 class="mb-2">
+              <span class="h6 mb-0">Admin</span><br>
+              <span class="js-checkModalName fw-bold"></span>
+            </h4>
+            <small class="js-checkModalEmail text-secondary mb-1"></small>
+            <a class="btn btn-transparent d-flex align-items-center justify-content-between js-rotate p-0"
+              data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+              <small class="px-2 py-1 bg-light border-radius-2 h7">Verified</small>
+              <i class="material-icons text-success">
+                expand_less
               </i>
-              <h6 class="fw-bold modal-title">Verified</h6>
-            </span>
-            <span class="h7 ms-auto mb-18">2020/4/12</span>
+            </a>
+            <div class="collapse mt-5" id="collapseExample">
+              <button type="button" class="btn btn-outline-danger border-radius-2 me-5 px-6"
+                data-bs-dismiss="modal">Deactivate</button>
+              <button type="button" class="btn btn-success border-radius-2 px-6">Edit</button>
+            </div>
           </div>
-          <button class="btn btn-outline-gray400 w-100 p-3 border-radius-2">Send Verification Mail</button>
-          <hr class="dividedLine">
-          <h5 class="modal-title mb-3 fw-bold">
-            Access Level
-          </h5>
-          <select class="form-select p-3 border-radius-2">
-            <option value="Admin">Admin</option>
-          </select>
-          <hr class="dividedLine">
-          <h5 class="modal-title mb-3 fw-bold">
-            Custom Access
-          </h5>
-          <div class="form-check">
-            <input class="form-check-input border-radius-2" type="checkbox" value="Lecture" id="Lecture">
-            <label class="form-check-label" for="Lecture">
-              Lecture
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input border-radius-2" type="checkbox" value="Coupon" id="Coupon">
-            <label class="form-check-label" for="Coupon">
-              Coupon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input border-radius-2" type="checkbox" value="Message" id="Message">
-            <label class="form-check-label" for="Message">
-              Message
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input border-radius-2" type="checkbox" value="Setting" id="Setting">
-            <label class="form-check-label" for="Setting">
-              Setting
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input border-radius-2" type="checkbox" value="Task Menu" id="Task Menu">
-            <label class="form-check-label" for="Task Menu">
-              Task Menu
-            </label>
-          </div>
-          <hr class="dividedLine">
-          <h5 class="modal-title fw-bold mb-18">
-            Deactivate Account
-          </h5>
-          <div class="d-flex align-items-center mb-18">
-            <i class="material-icons text-danger me-2">report_problem</i>
-            <span class="text-danger lh-33">This cannot be undone!</span>
-          </div>
-          <button class="btn btn-outline-danger w-100 p-3 border-radius-2 lh-33 fw-bold">Send Verification Mail</button>
         </div>
-        <div class="modal-footer border-top-0 mt-8">
-          <button type="button" class="btn btn-outline-success">Cancel</button>
-          <button type="button" class="btn btn-success">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--! edit modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title fw-bold" id="editModalLabel">Edit Admin</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="modal-title mb-3 fw-bold">
+          Account
+        </h5>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="js-accountName form-control bg-light border-0 p-3 border-radius-2" id="name"
+              value="Emir Wicks">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="js-accountEmail form-control bg-light border-0 p-3 border-radius-2" id="email"
+              value="emir.wicks@mail.com">
+          </div>
+        </form>
+        <hr class="dividedLine">
+        <h5 class="modal-title mb-3 fw-bold">
+          Verification
+        </h5>
+        <div class="d-flex align-items-center">
+          <span class="d-flex align-items-center">
+            <i class="material-icons text-success me-2">
+              check_circle
+            </i>
+            <h6 class="fw-bold modal-title">Verified</h6>
+          </span>
+          <span class="h7 ms-auto mb-18">2020/4/12</span>
         </div>
+        <button class="btn btn-outline-gray400 w-100 p-3 border-radius-2">Send Verification Mail</button>
+        <hr class="dividedLine">
+        <h5 class="modal-title mb-3 fw-bold">
+          Access Level
+        </h5>
+        <select class="form-select p-3 border-radius-2">
+          <option value="-Choose access level-"  selected disabled>-Choose access level-</option>
+          <option value="Admin">Admin</option>
+        </select>
+        <hr class="dividedLine">
+        <h5 class="modal-title mb-3 fw-bold">
+          Custom Access
+        </h5>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Lecture" id="Lecture">
+          <label class="form-check-label" for="Lecture">
+            Lecture
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Coupon" id="Coupon">
+          <label class="form-check-label" for="Coupon">
+            Coupon
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Message" id="Message">
+          <label class="form-check-label" for="Message">
+            Message
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Setting" id="Setting">
+          <label class="form-check-label" for="Setting">
+            Setting
+          </label>
+        </div>
+        <div class="form-check mb-20">
+          <input class="form-check-input border-radius-2" type="checkbox" value="Task Menu" id="Task Menu">
+          <label class="form-check-label" for="Task Menu">
+            Task Menu
+          </label>
+        </div>
+        <hr class="dividedLine">
+        <h5 class="modal-title fw-bold mb-18">
+          Deactivate Account
+        </h5>
+        <div class="d-flex align-items-center mb-18">
+          <i class="material-icons text-danger me-2">report_problem</i>
+          <span class="text-danger lh-33">This cannot be undone!</span>
+        </div>
+        <button class="btn btn-outline-danger w-100 p-3 border-radius-2 lh-33 fw-bold">Send Verification Mail</button>
+      </div>
+      <div class="modal-footer border-top-0 mt-8">
+        <button type="button" class="btn btn-outline-success px-6">Cancel</button>
+        <button type="button" class="btn btn-success px-6">Update</button>
       </div>
     </div>
   </div>

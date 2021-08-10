@@ -33,6 +33,26 @@ $('.js-modal').click(function() {
   console.log(name, email);
   $('.js-accountName').attr('value', name);
   $('.js-accountEmail').attr('value', email);
+});
+
+
+// infor modal
+let infoItem;
+let infoName;
+let infoEmail;
+
+$('.js-checkModal').click(function () {
+  infoItem = $(this).data('item');
+  infoName = $(this).data('name');
+  infoEmail = $(this).data('email');
+  $('.js-checkModalItem').text(infoItem);
+  $('.js-checkModalName').text(infoName);
+  $('.js-checkModalEmail').text(infoEmail);
+});
+
+
+// toggle rotate
+$(".js-rotate").click(function () {
+  console.log($(this).find('i'));
+  $(this).toggleClass("down");
 })
-
-
