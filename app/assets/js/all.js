@@ -1,3 +1,5 @@
+$conf['block_interest_cohort'] = TRUE;
+
 // layout sideMenu 
 let loc = (window.location.pathname).substring(1);
 
