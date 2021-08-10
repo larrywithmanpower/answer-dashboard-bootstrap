@@ -7,3 +7,13 @@
   width: 65%;
 }
 
+// edit area
+.editText {
+  &::-webkit-input-placeholder {
+    color: $secondary;
+  }
+  &:focus-visible {
+    outline: 0;
+  }
+}
+

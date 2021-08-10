@@ -1,28 +1,21 @@
 
 // layout sideMenu 
-let loc = $(location).attr('pathname').substring(1);
-// console.log($(location).attr('pathname'));
+let loc = window.location.pathname.substring(1);
 
-if (loc === 'index.html') {
-  $('.menu__item').find('.link').each(function () {
-    if($(this).attr('href') === loc) {
-      $(this).parent().addClass('active');
-    }
-  });
-} else if (loc === 'edit.html') {
-  $('.menu__item').find('.link').each(function () {
-    if($(this).attr('href') === 'index.html') {
-      $(this).parent().addClass('active');
-    }
-  });
-} else if (loc === 'admin.html') {
-  $('.menu__item').find('.link').each(function () {
-    if($(this).attr('href') === loc) {
-      $(this).parent().addClass('active');
-    }
-  });
-}
+$('.menu__item').find('.link').each(function () {
+  if($(this).attr('href') === loc) {
+    $(this).parent().addClass('active');
+  }
+});
 
+// edit area
+$('.js-editBtn').click(function (e) {
+  e.preventDefault();
+  console.log('got you');
+  $('.js-msgArea').addClass('d-none');
+  $('.js-footerArea').addClass('d-none');
+  $('.js-editArea').removeClass('d-none').addClass('d-block');
+})
 
 // modal
 let name;
