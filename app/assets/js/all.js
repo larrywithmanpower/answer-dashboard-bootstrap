@@ -1,6 +1,6 @@
 
 // layout sideMenu 
-let loc = window.location.pathname;
+let loc = window.location.href;
 
 $('.menu__item').find('.link').each(function () {
   if($(this).attr('href') === loc) {
