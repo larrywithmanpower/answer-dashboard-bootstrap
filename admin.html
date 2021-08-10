@@ -1,10 +1,83 @@
----
-title: Admin
-layout: ./app/layout.ejs
-engine: ejs
-current: admin
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Admin
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <div class="sideMenu bg-light d-flex flex-column align-items-start">
+      <h1 class="logo">
+        首頁
+      </h1>
+      <ul class="menu list-unstyled">
+        <li class="menu__item mb-5">
+          <a href="#" class="d-flex align-items-center fw-bold link">
+            <i class="material-icons me-3">
+              assessment
+            </i>
+            Dashboard
+          </a>
+        </li>
+        <li class="menu__item mb-5">
+          <a href="#" class="d-flex align-items-center fw-bold link">
+            <i class="material-icons me-3">
+              question_answer
+            </i>
+            Question
+          </a>
+        </li>
+        <li class="menu__item mb-5">
+          <a href="index.html" class="d-flex align-items-center fw-bold link">
+            <i class="material-icons me-3">
+              assignment
+            </i>
+            Assignment
+          </a>
+        </li>
+        <li class="menu__item mb-5">
+          <a href="#" class="d-flex align-items-center fw-bold link">
+            <i class="material-icons me-3">
+              smart_display
+            </i>
+            Course
+          </a>
+        </li>
+        <li class="menu__item mb-5">
+          <a href="admin.html" class="d-flex align-items-center fw-bold link">
+            <i class="material-icons me-3">
+              people
+            </i>
+            Admin
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="d-flex align-items-center fw-bold link">
+            <i class="material-icons me-3">
+              settings
+            </i>
+            Settings
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex ps-6 mt-auto">
+        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="" class="avatar rounded-circle me-3">
+        <div>
+          <h3 class="fw-bold h6 mb-1">Andy Chen</h3>
+          <span class="fs-7 text-muted">andy0401@mail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-9 px-3 pb-6">
+          
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white mb-7 navbar--style">
   <div class="container-fluid">
@@ -493,3 +566,12 @@ current: admin
     </div>
   </div>
 </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
