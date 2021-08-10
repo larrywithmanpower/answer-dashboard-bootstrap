@@ -5,6 +5,12 @@
 
 .assignmentCard {
   width: 65%;
+  .btn--hover {
+    transition: all .3s ease;
+    &:hover {
+      background-color: $gray-300;
+    }
+  }
 }
 
 // edit area
