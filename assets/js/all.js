@@ -1,6 +1,7 @@
 "use strict";
 
-// layout sideMenu 
+$conf['block_interest_cohort'] = TRUE; // layout sideMenu 
+
 var loc = window.location.pathname.substring(1);
 
 if (loc === 'index.html') {
