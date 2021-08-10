@@ -10125,6 +10125,12 @@ img {
 
 .assignmentCard {
   width: 65%; }
+  .assignmentCard .btn--hover {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .assignmentCard .btn--hover:hover {
+      background-color: #dee2e6; }
 
 .editText::-webkit-input-placeholder {
   color: #6c757d; }
